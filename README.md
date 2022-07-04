@@ -1,7 +1,6 @@
 # Readme
 
-![screen_recording](https://user-images.githubusercontent.com/6994514/177207496-e9d95348-9e61-44f2-82e2-2b4535cf265c.gif)
-
+![screen_recording](https://user-images.githubusercontent.com/6994514/177207646-2e77ef9a-693c-40fd-8780-edbe9e29d862.gif)
 
 ## How to set up 
 
