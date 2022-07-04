@@ -8,6 +8,8 @@ set shiftwidth=2
 set backspace=indent,eol,start
 set encoding=UTF-8
 set clipboard=unnamed
+:set ignorecase
+:set smartcase
 
 " Wrap when going right or left
 set whichwrap+=>,l
