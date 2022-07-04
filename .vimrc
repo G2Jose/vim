@@ -99,3 +99,6 @@ map <C-l> <C-W>l
 set guifont=Monaco\ Nerd\ Font\ Complete:h14
 let g:airline_powerline_fonts = 1
 
+" Update colors on Pmenu (used by coc)
+hi Pmenu ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#64666d gui=NONE
+hi PmenuSel ctermfg=NONE ctermbg=24 cterm=NONE guifg=NONE guibg=#204a87 gui=NONE
