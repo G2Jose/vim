@@ -12,6 +12,6 @@ nvim -c ':PlugInstall' -c ':qa!'
 
 # Patch fonts
 
-curl https://github.com/Karmenzind/monaco-nerd-fonts/raw/master/fonts/Monaco%20Nerd%20Font%20Complete.otf -o 'Monaco Nerd Font Complete.otf'
+curl https://github.com/Karmenzind/monaco-nerd-fonts/raw/master/fonts/Monaco%20Nerd%20Font%20Complete.otf -o 'fonts/Monaco Nerd Font Complete.otf'
 cp 'fonts/Monaco Nerd Font Complete.otf' ~/Library/Fonts
 echo "To see icons based on file types on NerdTree, switch your terminal font to Monaco Nerd Font Complete"
