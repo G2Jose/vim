@@ -17,15 +17,16 @@ set whichwrap+=<,h
 
 call plug#begin()
 
-Plug 'preservim/nerdtree'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tmsvg/pear-tree'
+Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'ryanoasis/vim-devicons'
-Plug 'tpope/vim-surround'
 
 call plug#end()
 
@@ -85,6 +86,7 @@ let NERDTreeShowHidden=1
 
 " FZF
 nmap <C-P> :GFiles<CR>
+nmap <C-Q> :Files<CR>
 
 " Change git-gutter column color
 highlight! link SignColumn LineNr
@@ -104,3 +106,12 @@ let g:airline_powerline_fonts = 1
 " Update colors on Pmenu (used by coc)
 hi Pmenu ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#64666d gui=NONE
 hi PmenuSel ctermfg=NONE ctermbg=24 cterm=NONE guifg=NONE guibg=#204a87 gui=NONE
+
+" Moving lines up or down
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+
